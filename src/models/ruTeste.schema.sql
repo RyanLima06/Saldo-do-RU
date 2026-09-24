@@ -38,7 +38,7 @@ CREATE TABLE qrcodes (
         ON UPDATE CASCADE
 ) ENGINE=InnoDB;
 
-
+ALTER USER 'ru_teste'@'localhost' IDENTIFIED BY 'ruAppPassword';
 CREATE USER 'ru_teste'@'localhost' IDENTIFIED BY 'ru_testePassword';
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON ru_teste.* TO 'ru_app'@'localhost';
